@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infant Joswa | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Poppins",sans-serif}
+html{scroll-behavior:smooth}
+p{color:rgb(85,85,85)}
+
+nav{display:flex;justify-content:space-around;align-items:center;height:17vh}
+.nav-links{display:flex;gap:2rem;list-style:none;font-size:1.2rem}
+a{color:black;text-decoration:none;transition:.3s}
+a:hover{color:grey;text-decoration:underline;text-underline-offset:1rem}
+.logo{font-size:2rem}
+
+section{padding-top:4vh;min-height:100vh;margin:0 10rem}
+
+#profile{display:flex;justify-content:center;gap:5rem;align-items:center}
+.section__pic-container img{width:350px;border-radius:2rem}
+.section__text{text-align:center}
+.title{font-size:3rem}
+
+.btn-container{display:flex;justify-content:center;gap:1rem;margin-top:1rem}
+.btn{padding:1rem 2rem;border-radius:2rem;border:1px solid #333;cursor:pointer;transition:.3s}
+.btn-color-1{background:#333;color:white}
+.btn-color-2{background:none}
+.btn:hover{transform:scale(1.05)}
+
+.section-container{display:flex;gap:4rem;align-items:center}
+.about-pic{width:300px;border-radius:2rem}
+.details-container{padding:1.5rem;border-radius:2rem;border:1px solid #aaa;text-align:center}
+
+#contact{text-align:center}
+.contact-info-upper-container{display:flex;justify-content:center;gap:2rem;margin-top:2rem}
+.icon{height:2rem;cursor:pointer}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Infant Joswa</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#courses">Certification</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="./assets/joswa.jpeg" alt="Profile">
+  </div>
+  <div class="section__text">
+    <p>Hello, I'm</p>
+    <h1 class="title">Infant Joswa</h1>
+    <div class="btn-container">
+      <button class="btn btn-color-2" onclick="window.open('./assets/Joswa resume.pdf')">Download CV</button>
+      <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+    </div>
+    <div style="margin-top:1rem">
+      <img src="./assets/linkedin.png" class="icon" onclick="location.href='https://linkedin.com'">
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <img src="./assets/img.jpg" class="about-pic">
+    <div>
+      <div class="details-container">
+        <h3>Certification</h3>
+        <p>NPTEL - Python for Data Science (ELITE)</p>
+      </div>
+      <br>
+      <div class="details-container">
+        <h3>Education</h3>
+        <p>B.Tech (Information Technology)</p>
+      </div>
+      <br>
+      <p>I am a B.Tech IT student passionate about software development, problem solving, and emerging technologies. My goal is to build innovative real-world solutions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="courses" style="text-align:center">
+  <h1 class="title">Courses Completed</h1>
+  <ol style="display:inline-block;text-align:left">
+    <li>HTML5 - Infosys Springboard</li>
+    <li>CSS3 - Infosys Springboard</li>
+    <li>JavaScript - Infosys Springboard</li>
+    <li>Java 11 Essentials</li>
+    <li>Front End Web Development Certification</li>
+  </ol>
+</section>
+
+<section id="contact">
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <p>📧 <a href="mailto:jjoswa.05@gmail.com">jjoswa.05@gmail.com</a></p>
+    <p>🔗 <a href="https://linkedin.com">LinkedIn</a></p>
+  </div>
+</section>
+
+</body>
+</html>
